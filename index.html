@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        background: #f4f4f5;
+        
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 1024px;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 202px;
+            height: 32px;
+        }
+        button{
+            height: 50px;
+            background: #0077ff;
+            border-radius: 14px;
+            padding: 0 32px;
+        }
+
+
+    }
+    nav>div {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 1024px;
+    }
+    .banner {
+        width: 100%;
+        height: 340px;
+        background: white;
+        border-radius: 24px;
+
+    }
+    #filterNcards {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    #filter {
+        width: 400px;
+        height: 500px;
+        background: white;
+        border-radius: 24px;
+
+    }
+    #cards {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 200px;
+        height: 200px;
+        background: white;
+        border-radius: 24px;
+       
+        border: solid 1px gray;
+        padding: 20px;
+       
+    }
+    #card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        height: fit-content;
+    }
+        #card-info p,
+        #card-info h3 {
+            margin: 0;
+        }
+        #badge {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 6px;
+            span {
+                background: gray;
+                height: 28px;
+                width: fit-content;
+                padding: 0 10px;
+            }
+        }
+    
+        #badges{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 15px;
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 24px;
+                background: gray;
+                height: 28px;
+                width: fit-content;
+                padding: 0 10px;
+            }
+            #card-info {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                height: fit-content;
+            }
+        }
+    
+  </style>
+<body>
+   <nav>
+    <img src="https://i.pinimg.com/736x/e7/62/b8/e762b84722d04cffd66eed100bc82a29.jpg" alt="" />
+
+    <div>
+        <a href="#">Вакансии</a>
+        <a href="#">Работодателям</a>
+    </div>
+
+    <button>Опубликовать</button>
+</nav>
+
+
+<main>
+
+    <div class="banner"></div>
+
+
+    <div id="filterNcards">
+
+        <div id="filter">
+        </div>
+
+
+        <div id="cards">
+
+            <div class="card">
+                <div id="card-info">
+                    <p>Т-банк</p>
+                    <h3>Диджитал дизайнер</h3>
+                    <p>Москва, формат работы</p>
+                </div>
+
+                <div id="badges">
+                    <div>Badge</div>
+                    <div>Badge</div>
+                    <div>Badge</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div id="card-info">
+                    <p>Т-банк</p>
+                    <h3>Диджитал дизайнер</h3>
+                    <p>Москва, формат работы</p>
+                </div>
+
+                <div id="badges">
+                    <div>Badge</div>
+                    <div>Badge</div>
+                    <div>Badge</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div id="card-info">
+                    <p>Т-банк</p>
+                    <h3>Диджитал дизайнер</h3>
+                    <p>Москва, формат работы</p>
+                </div>
+
+                <div id="badges">
+                    <div>Badge</div>
+                    <div>Badge</div>
+                    <div>Badge</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div id="card-info">
+                    <p>Т-банк</p>
+                    <h3>Диджитал дизайнер</h3>
+                    <p>Москва, формат работы</p>
+                </div>
+
+                <div id="badges">
+                    <div>Badge</div>
+                    <div>Badge</div>
+                    <div>Badge</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div id="card-info">
+                    <p>Т-банк</p>
+                    <h3>Диджитал дизайнер</h3>
+                    <p>Москва, формат работы</p>
+                </div>
+
+                <div id="badges">
+                    <div>Badge</div>
+                    <div>Badge</div>
+                    <div>Badge</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+</footer>
+
+</html>
